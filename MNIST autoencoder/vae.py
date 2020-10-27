@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # define hyper parameters
-n_epochs = 10
+n_epochs = 50
 batch_size = 64
 learning_rate = 0.001
 N_TEST_IMG = 8
@@ -108,6 +108,20 @@ def test():
         plt.draw()
     plt.pause(0)
 
+def generate():
+    scale = 1
+    f, a = plt.subplots(N_TEST_IMG, N_TEST_IMG, figsize=(5, 2))
+    plt.ion()
+    x = (torch.randn(N_TEST_IMG*N_TEST_IMG, 20)) * scale
+    decoded_result = model.decoder(x)
+    for i in range(N_TEST_IMG):
+        for j in range(N_TEST_IMG):
+            a[i][j].imshow(np.reshape(decoded_result.data.numpy()[i*N_TEST_IMG+j], (28, 28)), cmap='gray')
+            a[i][j].set_xticks(())
+            a[i][j].set_yticks(())
+    plt.pause(0)
+
+
 def main():
     train_flag = False
     test_flag = True
@@ -118,5 +132,6 @@ def main():
         test()
 
 if __name__=='__main__':
-    main()
-
+    # main()
+    model.load_state_dict(torch.load('VAE_params.pkl'))
+    generate()
