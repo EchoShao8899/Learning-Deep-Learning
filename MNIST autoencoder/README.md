@@ -27,7 +27,7 @@
   
 - 将随机产生的编码输入decoder生成新的图片
 
-  ![pic_generated_from_basic](.\img\pic_generated_from_basic.png)
+  ![](./img/pic_generated_from_basic.png)
 
 
 
@@ -56,6 +56,6 @@
 
 - 将随机产生的编码输入decoder生成新的图片 (可以看到这样产生的图片并不理想。简单增加Epoch值并没有改善结果，我还在思考问题产生的原因)
 
-  ![](.\img\pic_generated_from_vae.png)
+  ![](./img/pic_generated_from_vae.png)
 
 - P.S. 事实上，我在Google上搜索AutoEncoder的相关文献时搜到的主要都是VAE还有其与GAN结合的变体等等，最原初的AutoEncoder的paper我甚至没有找到。不过囿于前置知识和时间，我还没有把关于KL散度的推导以及一系列数学证明完全看明白，所以这里只是套公式简单实现了一下算法，希望以后能补上。
