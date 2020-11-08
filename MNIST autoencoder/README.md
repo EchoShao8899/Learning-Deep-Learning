@@ -54,7 +54,7 @@
 
   ![](./img/result_for_vae.png)
 
-- 将随机产生的编码输入decoder生成新的图片 (可以看到这样产生的图片并不理想。简单增加Epoch值并没有改善结果，我还在思考问题产生的原因)
+- 将随机产生的编码输入decoder生成新的图片 
 
   ![](./img/pic_generated_from_vae.png)
 
