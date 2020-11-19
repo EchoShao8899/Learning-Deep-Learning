@@ -1,3 +1,2 @@
-A buggy model :(
-
-probably wrong in embedding
+更新了一个bug~
+目前模型准确率76%

@@ -14,9 +14,10 @@ model.load_state_dict(torch.load('textCNN_params.pkl'))
 
 
 def predict_result(out):
+    out = out[0, :]
     score = max(out)
     label = np.where(out == score)[0][0]
-
+    # print(score)
     return label
 
 
