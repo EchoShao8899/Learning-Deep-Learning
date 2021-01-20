@@ -6,9 +6,9 @@
 
 $H(x)=x+F(x)$. The building block tries to learn $F(x)$ instead of learning $H(x)$.
 
-<img src="C:\research\learning\resnet_cifar10\image\1" alt="image-20210120145853258" style="zoom: 50%;" />
+<img src="image\1" alt="image-20210120145853258" style="zoom: 50%;" />
 
-​                                          <img src="C:\research\learning\resnet_cifar10\image\2" alt="image-20210120150158115" style="zoom: 50%;" /> <img src="C:\research\learning\resnet_cifar10\image\3" alt="img" style="zoom:50%;" /> 
+​                                          <img src="image\2" alt="image-20210120150158115" style="zoom: 50%;" /> <img src="image\3" alt="img" style="zoom:50%;" /> 
 
 **Detail in implementation**
 
@@ -17,5 +17,5 @@ $H(x)=x+F(x)$. The building block tries to learn $F(x)$ instead of learning $H(x
 
 **Network Design**
 
-![image-20210120150725847](C:\research\learning\resnet_cifar10\image\4)
+![image-20210120150725847](image\4)
 
